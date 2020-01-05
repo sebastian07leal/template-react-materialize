@@ -1,10 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from '../containers/Home';
+import 'materialize-css'; 
 
-function App() {
+const App = () => {
   return (
-    <div >
-      <h1>React</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

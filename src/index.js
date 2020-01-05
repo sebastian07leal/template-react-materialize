@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/index.css';
+import './styles/index.scss';
 import App from './routes/App';
 import * as serviceWorker from './serviceWorker';
+import 'materialize-css/sass/materialize.scss';
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
